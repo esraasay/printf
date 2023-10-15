@@ -23,13 +23,13 @@ int _printf(const char *format, ...)
 				write(1, &c, 1);
 				format++;
 			}
-			else if (format[i + 1] == 's')
+			if (format[i + 1] == 's')
 			{
 				s = va_arg(argument, char*);
 				write(1, s, strlen(s));
 				format++;
 			}
-			else if (format[i + 1] == '%')
+			if (format[i + 1] == '%')
 			{
 				write(1, &format[i], 1);
 			}
