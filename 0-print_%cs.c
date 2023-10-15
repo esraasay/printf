@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
   * _printf - produces output according to a format.
   * @format: a character string.
   * Return: number of characters
   */
-
 int _printf(const char *format, ...)
 {
 	int i;
@@ -35,9 +33,7 @@ int _printf(const char *format, ...)
 			}
 		}
 		else
-		{
 			write(1, &format[i], 1);
-		}
 	}
 	va_end(argument);
 	return (*format);
