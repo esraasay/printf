@@ -8,23 +8,24 @@
 
 int _printf(const char *format, ...)
 {
-	int i;
-	const char *ptr = format;
+	int i, num;
 	va_list argument;
 
 	va_start(argument, format);
-	for (i = 0; ptr[i] != '\0'; i++)
+	if (*format == '\0')
+		return (1);
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (ptr[i] == '%')
+		if (format[i] == '%')
 		{
-			format_character(ptr[i + 1], argument);
+			num = format_character(format[i + 1], argument);
 			i++;
 		}
 		else
 		{
-			write(1, &ptr[i], 1);
+			write(1, &format[i], 1);
 		}
 	}
 	va_end(argument);
-	return (i);
+	return (num);
 }
