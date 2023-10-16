@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, num;
+	int i;
 	va_list argument;
 
 	va_start(argument, format);
@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			num = format_character(format[i + 1], argument);
+			format_character(format[i + 1], argument);
 			i++;
 		}
 		else
@@ -27,5 +27,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(argument);
-	return (num);
+	return (i);
 }
