@@ -38,7 +38,9 @@ This string contains both text and format specifiers.
 Exemple:
 
 
+
 _printf("Hello");
+
 Output : Hello
 
 
