@@ -1,4 +1,4 @@
-printf
+Printf
 
 "Our team project, _printf, is a usage printf function written in C. 
 It's meticulously designed to handle a range of inputs and optional arguments,
@@ -6,7 +6,7 @@ mirroring the behavior of the standard printf function.
 We developed and submitted this project as a requirement for
 grading in the ALX software engineering course."
 
-Description
+Description:
 
 _printf function used for formatted output.
 
@@ -35,15 +35,14 @@ This string contains both text and format specifiers.
 
 •%% print a percent sign.
 
-Exemple
+Exemple:
 
 
 _printf("Hello");
-
 Output : Hello
 
 
-authorized signatory
+authorized signatory:
 
 
 Noha Mohamed
