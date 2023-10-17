@@ -6,7 +6,7 @@
  * Return: number.
  */
 int format_di(char c, va_list argument)
-{ int d, digit = 0;
+{ int d, i, digit = 0, digits[10], num_digits = 0;
 
 	if (c == 'd' || c == 'i')
 	{
@@ -23,10 +23,6 @@ int format_di(char c, va_list argument)
 		}
 		else
 		{
-			int digits[10];
-			int num_digits = 0;
-			int i;
-
 			while (d > 0)
 			{
 				digits[num_digits] = d % 10;
