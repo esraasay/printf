@@ -7,5 +7,6 @@
 
 int _printf(const char *format, ...);
 int format_character(char ch, va_list argument);
+int format_di(char ch, va_list argument);
 
 #endif
