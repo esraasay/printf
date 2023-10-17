@@ -25,16 +25,19 @@ int format_di(char c, va_list argument)
 		{
 			int digits[10];
 			int num_digits = 0;
+			int i;
 
 			while (d > 0)
 			{
 				digits[num_digits] = d % 10;
-				d / = 10;
+				d /= 10;
 				num_digits++;
 			}
 			for (i = num_digits - 1; i >= 0; i--)
 			{
 					digit = digits[i] + '0';
 					write(1, &digit, 1);
-					}	}	}
-					return (d); }
+					}	}	}	return (d); }
+
+
+
