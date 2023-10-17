@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			format_character(format[i + 1], argument);
+			format_di(format[i + 1], argument);
 			i++;
 		}
 		else
