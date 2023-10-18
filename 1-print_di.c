@@ -3,7 +3,7 @@
  * format_di - print int.
  * @c: the integer to print.
  * @argument: list of argument.
- * Return: number.
+ * Return: Number.
  */
 int format_di(char c, va_list argument)
 {
@@ -21,7 +21,7 @@ int format_di(char c, va_list argument)
 	{
 			digit = '0';
 			write(1, &digit, 1);
-		}
+	}
 		else
 		{
 			while (d > 0)
