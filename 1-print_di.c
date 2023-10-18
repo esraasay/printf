@@ -30,7 +30,7 @@ int format_di(char c, va_list argument)
 				d /= 10;
 				num_digits++;
 			}
-			for (i = num_digits - 1; i >= 0; i--)
+			for(i = num_digits - 1; i >= 0; i--)
 			{
 					digit = digits[i] + '0';
 					write(1, &digit, 1);
