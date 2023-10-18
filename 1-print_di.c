@@ -6,7 +6,8 @@
  * Return: number.
  */
 int format_di(char c, va_list argument)
-{ int d, i, digit = 0, digits[10], num_digits = 0;
+{
+	int d, i, digit = 0, digits[10], num_digits = 0;
 
 	if (c == 'd' || c == 'i')
 	{
@@ -33,7 +34,6 @@ int format_di(char c, va_list argument)
 			{
 					digit = digits[i] + '0';
 					write(1, &digit, 1);
-					}	}	}	return (d); }
-
-
-
+			}	}	}
+	return (d);
+}
